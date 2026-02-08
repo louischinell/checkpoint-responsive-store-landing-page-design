@@ -1,0 +1,1 @@
+# checkpoint-responsive-store-landing-page-design
