@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(255, 235, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article {
+    padding: 2rem;
+}
+
+
+h1, #more {
+    color: #a41d4f;
+}
+

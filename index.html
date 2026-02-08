@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Shpopify</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/774/774122.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+
+
+    <body>
+ <!-- NAVBAR -->
+        <nav class="relative bg-[#8a1c44]">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  <!-- Mobile menu button-->
+                  <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                      <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                      <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4 justify-between">
+                    <div>
+                     <a href="#" aria-current="page" class="rounded-md bg-red-200 px-3 py-2 text-xl font-medium text-white">Shpopify™</a>
+
+                    </div> 
+                     <div>
+                     <a href="#products" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Products</a>
+                      <a href="#credits" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Credits</a>
+                     
+                     </div>
+                 </div>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+              <div class="space-y-1 px-2 pt-2 pb-3">
+                <a href="#" aria-current="page" class="block rounded-md bg-red-200 px-3 py-2 text-base font-medium text-white">Shpopify™</a>
+                <a href="#products" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Products</a>
+                <a href="#credits" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Credits</a>
+              </div>
+            </el-disclosure>
+        </nav>
+
+
+<!-- HERO/HEADER -->
+        <section class="text-gray-600 body-font flex bg-[url('https://www.lolitahistory.com/gallery/_data/i/upload/2018/04/06/20180406104325-c44044c9-sm.png')] bg-cover bg-right">
+            <div class="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
+                <h1 class="md:text-6xl text-3xl mb-2 font-bold text-white tracking-tight leading-tight">
+                    New Arrivals
+                  </h1>
+                  <div class="lg:w-2/3 w-full animate-fade-in-down bg-red-200/60 rounded-2xl">
+                  <p class="my-5 md:leading-relaxed leading-normal text-white tracking-tight text-xl p-4 rounded">
+                    Lorem ipsum dolor sit amet consectetur adi repellendus voluptatum consequatur laboriosam molestias reprehenderit blanditiis!</p>
+                </div>
+              </div>
+           
+        </section>
+
+<!-- PRODUCTS GRID -->
+        <article class="mt-5">
+        <h1 class="text-3xl font-bold" id="products">Shop our latest products:</h1>
+
+        <div class="my-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+
+            <div class="rounded-2xl w-75 bg-white overflow-hidden shadow-md">
+                <img class="w-full" src="https://kawaiibabe.com/cdn/shop/files/cozy-winter-wonderland-pink-long-sleeve-lolita-jsk-dress-172_600x.jpg?v=1739824073" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-[#d27094] text-xl mb-2">Old Pink Xiao Dress</div>
+                  <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                <button class="btn bg-[#d27094] text-red-100 p-2 rounded mt-3">Shop now</button>
+                </div>
+              </div>
+
+              <div class="rounded-2xl w-75 bg-white overflow-hidden shadow-md">
+                <img class="w-full" src="https://www.cosfun.com/cdn/shop/files/O1CN01bGqhtG1KgR66CZeJP__335431193_1200x.webp?v=1743438511" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-[#d27094] text-xl mb-2">Alice Blue Dress</div>
+                  <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>                
+                  <button class="btn bg-[#d27094] text-red-100 p-2 rounded mt-3">Shop now</button>
+                </div>
+              </div>
+
+              <div class="rounded-2xl w-75 bg-white overflow-hidden shadow-md">
+                <img class="w-full" src="https://i.ebayimg.com/images/g/J5wAAOSwcIpeYH3d/s-l1200.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-[#d27094] text-xl mb-2">Cozy Bear Dress</div>
+                  <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>                
+                  <button class="btn bg-[#d27094] text-red-100 p-2 rounded mt-3">Shop now</button>
+                </div>
+              </div>
+
+              <div class="rounded-2xl w-75 bg-white overflow-hidden shadow-md">
+                <img class="w-full" src="https://m.media-amazon.com/images/I/71BXj78+RGL._AC_UY350_.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-[#d27094] text-xl mb-2">Pearl Blue Dress</div>
+                  <p class="text-gray-700 text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>               
+                   <button class="btn bg-[#d27094] text-red-100 p-2 rounded mt-3">Shop now</button>
+                </div>
+              </div>
+
+        </div>
+
+        <p id="more" class="text-right underline">See more ></p>
+        </article>
+
+<!-- FOOTER -->
+        <footer id="credits" class="bg-red-200 mt-[4rem] text-white">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                  <div class="mb-6 md:mb-0">
+                      <a href="/" class="flex items-center">
+                          <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Shpopify</span>
+                      </a>
+                      <span class="text-sm text-body sm:text-center">© 2023 Shpopify™. All Rights Reserved.</span>
+
+                  </div>
+                  <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                          <h2 class="mb-6 text-sm font-semibold text-heading uppercase">About Us</h2>
+                          <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Career</h2>
+                          <div>
+                     <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Follow us</h2>
+                            <div class="flex sm:justify-center sm:mt-0">
+                       <a href="#" class="text-body hover:text-heading">
+                               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg>
+                                     <span class="sr-only">Facebook page</span>
+                             </a>
+                               <a href="#" class="text-body hover:text-heading ms-5">
+                               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/></svg>
+                             <span class="sr-only">Twitter page</span>
+                                                        </a>
+                              </div>
+                          </div>
+
+                  </div>
+              </div>
+            </div>
+        </footer>
+
+<!-- TAILWINDS SCRIPT -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    </body>
+</html>
